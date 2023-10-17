@@ -11,11 +11,6 @@ use App\Models\User;
 
 class UserService {
 
-
-    public function testApi(){
-        return new BaseResponse(true, 200, "La api esta funcionando y su usuario esta autenticado.");
-    }
-
     public function createNewUser($request){
         
         try{

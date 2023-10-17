@@ -14,14 +14,6 @@ class UserController extends Controller
         $this->UserService = $UserService;
     }
 
-    public function test(){
-
-        $result = $this->UserService->testApi();
-
-        return response()->json($result, $result->StatusCode);
-    }
-
-
     public function create(){
 
         $request = request(['user_name', 'password']);
